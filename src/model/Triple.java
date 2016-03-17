@@ -8,6 +8,14 @@ public class Triple {
 	public Triple() {
 		super();
 	}
+	
+	public Triple(String subject, String object, String predicate) {
+		super();
+		this.subject = subject;
+		this.object = object;
+		this.predicate = predicate;
+	}
+
 	public Triple(int tripleID, String subject, String object, String predicate) {
 		super();
 		this.tripleID = tripleID;

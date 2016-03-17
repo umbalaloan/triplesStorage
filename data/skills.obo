@@ -1,0 +1,640 @@
+format-version: 1.2
+date: 16:03:2016 15:08
+saved-by: dev
+auto-generated-by: The OWL API (version 3.4.2)
+id_space: rdfs http://www.w3.org/2000/01/rdf-schema#
+id_space: owl http://www.w3.org/2002/07/owl#
+id_space: obo http://purl.obolibrary.org/obo/
+id_space: rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+id_space: anonymous anonymous#
+id_space: skills_v2_obo http://purl.obolibrary.org/obo/skills_v2_obo.owl#
+id_space: C http://purl.obolibrary.org/obo/skills_v2_obo.owl#C++
+id_space: xsd http://www.w3.org/2001/XMLSchema#
+instance_of: Game_development
+instance_of: Applications_development
+
+
+! ----------------------  CLASSES  -------------------------
+
+[Term]
+id: Administration
+name: Administration
+is_a: Database_related
+
+[Term]
+id: Applications_Programming
+name: Applications_Programming
+is_a: Techical_Skills
+
+[Term]
+id: Applications_development
+name: Applications_development
+is_a: Mobile_development_related
+
+[Term]
+id: BI_Business_Intelligence
+name: BI_Business_Intelligence
+is_a: Business_Applications
+
+[Term]
+id: Back_end
+name: Back_end
+is_a: Web_development_related
+
+[Term]
+id: Big_Data
+name: Big_Data
+is_a: Data_Science_related
+
+[Term]
+id: Business_Applications
+name: Business_Applications
+is_a: Techical_Skills
+
+[Term]
+id: Business_Domain
+name: Business_Domain
+is_a: Techical_Skills
+
+[Term]
+id: CRM_Customer_Relationship_Management
+name: CRM_Customer_Relationship_Management
+is_a: Business_Applications
+
+[Term]
+id: Data_Mining
+name: Data_Mining
+is_a: Data_Science_related
+
+[Term]
+id: Data_Science_related
+name: Data_Science_related
+is_a: Techical_Skills
+
+[Term]
+id: Data_Science_related_to_libraries
+name: Data_Science_related_to_libraries
+is_a: Data_Science_related
+is_a: libraries_or_Frameworks
+
+[Term]
+id: Data_Science_related_to_programming_language
+name: Data_Science_related_to_programming_language
+is_a: Data_Science_related
+is_a: Programming_language
+
+[Term]
+id: Database_related
+name: Database_related
+is_a: Techical_Skills
+
+[Term]
+id: Database_related_to_programming_language
+name: Database_related_to_programming_language
+is_a: Programming_language
+is_a: Database_related
+
+[Term]
+id: Design
+name: Design
+is_a: Database_related
+
+[Term]
+id: Design_Patterns
+name: Design_Patterns
+is_a: Software_design
+
+[Term]
+id: Development
+name: Development
+is_a: Database_related
+
+[Term]
+id: ERP_Enterprise_Relationship_Management
+name: ERP_Enterprise_Relationship_Management
+is_a: Business_Applications
+
+[Term]
+id: Front_end
+name: Front_end
+is_a: Web_development_related
+
+[Term]
+id: Functional_Language
+name: Functional_Language
+is_a: Programming_language
+
+[Term]
+id: Game_development
+name: Game_development
+is_a: Mobile_development_related
+
+[Term]
+id: Linux
+name: Linux
+is_a: Operating_Systems
+
+[Term]
+id: Mac
+name: Mac
+is_a: Operating_Systems
+
+[Term]
+id: Machine_Learning
+name: Machine_Learning
+is_a: Data_Science_related
+
+[Term]
+id: Methodologies
+name: Methodologies
+is_a: Software_Development
+
+[Term]
+id: Mobile_development_related
+name: Mobile_development_related
+is_a: Software_Development
+
+[Term]
+id: Mobile_development_related_to_programming_language
+name: Mobile_development_related_to_programming_language
+is_a: Programming_language
+is_a: Mobile_development_related
+
+[Term]
+id: Mobile_related_to_libraries
+name: Mobile_related_to_libraries
+is_a: Mobile_development_related
+is_a: libraries_or_Frameworks
+
+[Term]
+id: NLP
+name: NLP
+is_a: Data_Science_related
+
+[Term]
+id: Object-oriented_programming
+name: Object-oriented_programming
+is_a: Programming_language
+
+[Term]
+id: Operating_Systems
+name: Operating_Systems
+is_a: Techical_Skills
+
+[Term]
+id: Procedure_Programming_Language
+name: Procedure_Programming_Language
+is_a: Programming_language
+
+[Term]
+id: Programming_Tools
+name: Programming_Tools
+is_a: Applications_Programming
+
+[Term]
+id: Programming_language
+name: Programming_language
+is_a: Applications_Programming
+
+[Term]
+id: Scripting_Languages
+name: Scripting_Languages
+is_a: Programming_language
+
+[Term]
+id: Service_Design
+name: Service_Design
+is_a: Software_design
+
+[Term]
+id: Software_Development
+name: Software_Development
+is_a: Techical_Skills
+
+[Term]
+id: Software_design
+name: Software_design
+is_a: Techical_Skills
+
+[Term]
+id: Techical_Skills
+name: Techical_Skills
+is_a: Thing
+
+[Term]
+id: Thing
+name: Thing
+is_a: Thing
+
+[Term]
+id: UI_design
+name: UI_design
+is_a: Software_design
+
+[Term]
+id: UI_design_related_to_Programming_language
+name: UI_design_related_to_Programming_language
+is_a: Programming_language
+is_a: UI_design
+
+[Term]
+id: Web_Services
+name: Web_Services
+is_a: Software_Development
+
+[Term]
+id: Web_development_related
+name: Web_development_related
+is_a: Software_Development
+
+[Term]
+id: Web_development_related_to_programming_language
+name: Web_development_related_to_programming_language
+is_a: Programming_language
+is_a: Web_development_related
+
+[Term]
+id: Web_related_to_libraries
+name: Web_related_to_libraries
+is_a: libraries_or_Frameworks
+is_a: Web_development_related
+
+[Term]
+id: Windows
+name: Windows
+is_a: Operating_Systems
+
+[Term]
+id: libraries_or_Frameworks
+name: libraries_or_Frameworks
+is_a: Applications_Programming
+
+
+! ----------------------  PROPERTIES  -------------------------
+
+[Typedef]
+id: hasValue
+name: hasValue
+domain: Techical_Skills
+is_metadata_tag: false
+
+[Typedef]
+id: description
+name: description
+range: http://www.w3.org/2001/XMLSchema#string
+is_metadata_tag: false
+
+[Typedef]
+id: name
+name: name
+range: http://www.w3.org/2001/XMLSchema#string
+is_metadata_tag: false
+
+
+! ----------------------  INSTANCES  -------------------------
+
+[Instance]
+id: iOS
+name: iOS
+namespace: anonymous
+instance_of: Game_development
+instance_of: Applications_development
+
+[Instance]
+id: ASP.NET
+name: ASP.NET
+instance_of: Back_end
+
+[Instance]
+id: Agile
+name: Agile
+instance_of: Methodologies
+
+[Instance]
+id: Android
+name: Android
+instance_of: Game_development
+instance_of: Applications_development
+
+[Instance]
+id: Banking
+name: Banking
+instance_of: Business_Domain
+
+[Instance]
+id: Bash_Shell
+name: Bash_Shell
+instance_of: Scripting_Languages
+
+[Instance]
+id: Billing
+name: Billing
+instance_of: Business_Domain
+
+[Instance]
+id: Bootstrap
+name: Bootstrap
+instance_of: libraries_or_Frameworks
+instance_of: Front_end
+
+[Instance]
+id: C
+name: C
+instance_of: Procedure_Programming_Language
+
+[Instance]
+id: C++
+name: C++
+instance_of: Procedure_Programming_Language
+instance_of: Object-oriented_programming
+
+[Instance]
+id: CRM
+name: CRM
+
+[Instance]
+id: CSS
+name: CSS
+instance_of: Programming_language
+instance_of: UI_design
+
+[Instance]
+id: CSS3
+name: CSS3
+instance_of: Programming_language
+instance_of: UI_design
+
+[Instance]
+id: CSharp
+name: CSharp
+instance_of: Object-oriented_programming
+
+[Instance]
+id: CentOS
+name: CentOS
+instance_of: Linux
+
+[Instance]
+id: Cocoa
+name: Cocoa
+instance_of: Mobile_development_related
+instance_of: Mobile_development_related_to_programming_language
+
+[Instance]
+id: Cocoa_Touch
+name: Cocoa_Touch
+instance_of: libraries_or_Frameworks
+instance_of: Programming_Tools
+
+[Instance]
+id: EJB
+name: EJB
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Factory
+name: Factory
+instance_of: Design_Patterns
+
+[Instance]
+id: Finance
+name: Finance
+instance_of: Business_Domain
+
+[Instance]
+id: HP_Haven
+name: HP_Haven
+instance_of: libraries_or_Frameworks
+instance_of: Big_Data
+
+[Instance]
+id: HP_Vertica
+name: HP_Vertica
+instance_of: Big_Data
+
+[Instance]
+id: HTML
+name: HTML
+instance_of: Programming_language
+instance_of: UI_design
+
+[Instance]
+id: HTML5
+name: HTML5
+instance_of: Programming_language
+instance_of: UI_design
+
+[Instance]
+id: Hadoop
+name: Hadoop
+instance_of: libraries_or_Frameworks
+instance_of: Big_Data
+
+[Instance]
+id: Hibernate
+name: Hibernate
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: IBM_InforSphere
+name: IBM_InforSphere
+instance_of: libraries_or_Frameworks
+instance_of: Big_Data
+
+[Instance]
+id: IBM_Pure_Data
+name: IBM_Pure_Data
+instance_of: libraries_or_Frameworks
+instance_of: Big_Data
+
+[Instance]
+id: J2EE
+name: J2EE
+instance_of: Back_end
+
+[Instance]
+id: JPA
+name: JPA
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Java
+name: Java
+instance_of: Object-oriented_programming
+
+[Instance]
+id: JavaScript
+name: JavaScript
+instance_of: Programming_language
+instance_of: UI_design
+instance_of: Front_end
+
+[Instance]
+id: Json
+name: Json
+instance_of: libraries_or_Frameworks
+
+[Instance]
+id: Mac_OS
+name: Mac_OS
+instance_of: Mac
+
+[Instance]
+id: Matlab
+name: Matlab
+instance_of: Functional_Language
+
+[Instance]
+id: Microsoft_Dynamic_CRM
+name: Microsoft_Dynamic_CRM
+instance_of: CRM_Customer_Relationship_Management
+property_value: hasValue CRM
+property_value: description "Microsoft Dynamic Customer Relationship Management" http://www.w3.org/2001/XMLSchema#string
+
+[Instance]
+id: NLTK
+name: NLTK
+instance_of: libraries_or_Frameworks
+instance_of: NLP
+
+[Instance]
+id: NodeJS
+name: NodeJS
+instance_of: libraries_or_Frameworks
+instance_of: Front_end
+instance_of: Back_end
+
+[Instance]
+id: OS_X
+name: OS_X
+instance_of: Game_development
+instance_of: Applications_development
+
+[Instance]
+id: Objective-C
+name: Objective-C
+instance_of: Mobile_development_related
+instance_of: Mobile_development_related_to_programming_language
+instance_of: Object-oriented_programming
+
+[Instance]
+id: OpenNLP
+name: OpenNLP
+instance_of: libraries_or_Frameworks
+instance_of: NLP
+
+[Instance]
+id: Payment
+name: Payment
+instance_of: Business_Domain
+
+[Instance]
+id: Python
+name: Python
+instance_of: Object-oriented_programming
+instance_of: Scripting_Languages
+
+[Instance]
+id: R
+name: R
+instance_of: Functional_Language
+
+[Instance]
+id: REST
+name: REST
+instance_of: Web_Services
+
+[Instance]
+id: SOA
+name: SOA
+instance_of: Service_Design
+
+[Instance]
+id: SOAP
+name: SOAP
+instance_of: Web_Services
+
+[Instance]
+id: Sale
+name: Sale
+instance_of: Business_Domain
+
+[Instance]
+id: Scrum
+name: Scrum
+instance_of: Methodologies
+
+[Instance]
+id: Servlet
+name: Servlet
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Singleton
+name: Singleton
+instance_of: Design_Patterns
+
+[Instance]
+id: Spark
+name: Spark
+instance_of: libraries_or_Frameworks
+instance_of: Machine_Learning
+
+[Instance]
+id: Spring
+name: Spring
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Spring_Data
+name: Spring_Data
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Spring_MVC
+name: Spring_MVC
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Stanford_Parser
+name: Stanford_Parser
+instance_of: libraries_or_Frameworks
+instance_of: NLP
+
+[Instance]
+id: Storm
+name: Storm
+instance_of: Data_Science_related_to_libraries
+instance_of: libraries_or_Frameworks
+instance_of: Big_Data
+
+[Instance]
+id: Struct
+name: Struct
+instance_of: libraries_or_Frameworks
+instance_of: Web_development_related
+
+[Instance]
+id: Swift
+name: Swift
+instance_of: Mobile_development_related
+instance_of: Mobile_development_related_to_programming_language
+instance_of: Object-oriented_programming
+
+[Instance]
+id: Ubuntu
+name: Ubuntu
+instance_of: Linux
+
+[Instance]
+id: XML
+name: XML
+instance_of: Programming_language
+instance_of: UI_design

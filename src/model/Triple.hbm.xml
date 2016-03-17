@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2016 10:58:09 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Triple" table="TRIPLES" optimistic-lock="version">
+        <id name="tripleID" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="subject" type="java.lang.String">
+            <column name="subject" />
+        </property>
+        <property name="object" type="java.lang.String">
+            <column name="object" />
+        </property>
+        <property name="predicate" type="java.lang.String">
+            <column name="predicate" />
+        </property>
+    </class>
+</hibernate-mapping>

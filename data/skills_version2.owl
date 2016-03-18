@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY skills "file:/home/dev/Desktop/owl/demo/skills#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="skills#"
+     xml:base="skills"
+     xmlns:skills="file:/home/dev/Desktop/owl/demo/skills#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="file:/home/dev/Desktop/owl/demo/skills">
+        <owl:versionIRI rdf:resource="file:/home/dev/Desktop/owl/demo/skills/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#hasValue -->
+
+    <owl:ObjectProperty rdf:about="&skills;hasValue">
+        <rdfs:domain rdf:resource="&skills;Techical_Skills"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Description -->
+
+    <owl:DatatypeProperty rdf:about="&skills;Description">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Name -->
+
+    <owl:DatatypeProperty rdf:about="&skills;Name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Administration -->
+
+    <owl:Class rdf:about="&skills;Administration">
+        <rdfs:subClassOf rdf:resource="&skills;Database_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Applications_Programming -->
+
+    <owl:Class rdf:about="&skills;Applications_Programming">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Applications_development -->
+
+    <owl:Class rdf:about="&skills;Applications_development">
+        <rdfs:subClassOf rdf:resource="&skills;Mobile_development_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#BI_Business_Intelligence -->
+
+    <owl:Class rdf:about="&skills;BI_Business_Intelligence">
+        <rdfs:subClassOf rdf:resource="&skills;Business_Applications"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Back_end -->
+
+    <owl:Class rdf:about="&skills;Back_end">
+        <rdfs:subClassOf rdf:resource="&skills;Web_development_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Big_Data -->
+
+    <owl:Class rdf:about="&skills;Big_Data">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Business_Applications -->
+
+    <owl:Class rdf:about="&skills;Business_Applications">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Business_Domain -->
+
+    <owl:Class rdf:about="&skills;Business_Domain">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CRM_Customer_Relationship_Management -->
+
+    <owl:Class rdf:about="&skills;CRM_Customer_Relationship_Management">
+        <rdfs:subClassOf rdf:resource="&skills;Business_Applications"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Data_Mining -->
+
+    <owl:Class rdf:about="&skills;Data_Mining">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Data_Science_related -->
+
+    <owl:Class rdf:about="&skills;Data_Science_related">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Data_Science_related_to_libraries -->
+
+    <owl:Class rdf:about="&skills;Data_Science_related_to_libraries">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Data_Science_related_to_programming_language -->
+
+    <owl:Class rdf:about="&skills;Data_Science_related_to_programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Database_related -->
+
+    <owl:Class rdf:about="&skills;Database_related">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Database_related_to_programming_language -->
+
+    <owl:Class rdf:about="&skills;Database_related_to_programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Database_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Design -->
+
+    <owl:Class rdf:about="&skills;Design">
+        <rdfs:subClassOf rdf:resource="&skills;Database_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Design_Patterns -->
+
+    <owl:Class rdf:about="&skills;Design_Patterns">
+        <rdfs:subClassOf rdf:resource="&skills;Software_design"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Development -->
+
+    <owl:Class rdf:about="&skills;Development">
+        <rdfs:subClassOf rdf:resource="&skills;Database_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#ERP_Enterprise_Relationship_Management -->
+
+    <owl:Class rdf:about="&skills;ERP_Enterprise_Relationship_Management">
+        <rdfs:subClassOf rdf:resource="&skills;Business_Applications"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Front_end -->
+
+    <owl:Class rdf:about="&skills;Front_end">
+        <rdfs:subClassOf rdf:resource="&skills;Web_development_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Functional_Language -->
+
+    <owl:Class rdf:about="&skills;Functional_Language">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Game_development -->
+
+    <owl:Class rdf:about="&skills;Game_development">
+        <rdfs:subClassOf rdf:resource="&skills;Mobile_development_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Linux -->
+
+    <owl:Class rdf:about="&skills;Linux">
+        <rdfs:subClassOf rdf:resource="&skills;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Mac -->
+
+    <owl:Class rdf:about="&skills;Mac">
+        <rdfs:subClassOf rdf:resource="&skills;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Machine_Learning -->
+
+    <owl:Class rdf:about="&skills;Machine_Learning">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Methodologies -->
+
+    <owl:Class rdf:about="&skills;Methodologies">
+        <rdfs:subClassOf rdf:resource="&skills;Software_Development"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Mobile_development_related -->
+
+    <owl:Class rdf:about="&skills;Mobile_development_related">
+        <rdfs:subClassOf rdf:resource="&skills;Software_Development"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Mobile_development_related_to_programming_language -->
+
+    <owl:Class rdf:about="&skills;Mobile_development_related_to_programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Mobile_development_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Mobile_related_to_libraries -->
+
+    <owl:Class rdf:about="&skills;Mobile_related_to_libraries">
+        <rdfs:subClassOf rdf:resource="&skills;Mobile_development_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#NLP -->
+
+    <owl:Class rdf:about="&skills;NLP">
+        <rdfs:subClassOf rdf:resource="&skills;Data_Science_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Object-oriented_programming -->
+
+    <owl:Class rdf:about="&skills;Object-oriented_programming">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Operating_Systems -->
+
+    <owl:Class rdf:about="&skills;Operating_Systems">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Procedure_Programming_Language -->
+
+    <owl:Class rdf:about="&skills;Procedure_Programming_Language">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Programming_Tools -->
+
+    <owl:Class rdf:about="&skills;Programming_Tools">
+        <rdfs:subClassOf rdf:resource="&skills;Applications_Programming"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Programming_language -->
+
+    <owl:Class rdf:about="&skills;Programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Applications_Programming"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Scripting_Languages -->
+
+    <owl:Class rdf:about="&skills;Scripting_Languages">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Service_Design -->
+
+    <owl:Class rdf:about="&skills;Service_Design">
+        <rdfs:subClassOf rdf:resource="&skills;Software_design"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Software_Development -->
+
+    <owl:Class rdf:about="&skills;Software_Development">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Software_design -->
+
+    <owl:Class rdf:about="&skills;Software_design">
+        <rdfs:subClassOf rdf:resource="&skills;Techical_Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Techical_Skills -->
+
+    <owl:Class rdf:about="&skills;Techical_Skills"/>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#UI_design -->
+
+    <owl:Class rdf:about="&skills;UI_design">
+        <rdfs:subClassOf rdf:resource="&skills;Software_design"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#UI_design_related_to_Programming_language -->
+
+    <owl:Class rdf:about="&skills;UI_design_related_to_Programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+        <rdfs:subClassOf rdf:resource="&skills;UI_design"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Web_Services -->
+
+    <owl:Class rdf:about="&skills;Web_Services">
+        <rdfs:subClassOf rdf:resource="&skills;Software_Development"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Web_development_related -->
+
+    <owl:Class rdf:about="&skills;Web_development_related">
+        <rdfs:subClassOf rdf:resource="&skills;Software_Development"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Web_development_related_to_programming_language -->
+
+    <owl:Class rdf:about="&skills;Web_development_related_to_programming_language">
+        <rdfs:subClassOf rdf:resource="&skills;Programming_language"/>
+        <rdfs:subClassOf rdf:resource="&skills;Web_development_related"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Web_related_to_libraries -->
+
+    <owl:Class rdf:about="&skills;Web_related_to_libraries">
+        <rdfs:subClassOf rdf:resource="&skills;Web_development_related"/>
+        <rdfs:subClassOf rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Windows -->
+
+    <owl:Class rdf:about="&skills;Windows">
+        <rdfs:subClassOf rdf:resource="&skills;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#libraries_or_Frameworks -->
+
+    <owl:Class rdf:about="&skills;libraries_or_Frameworks">
+        <rdfs:subClassOf rdf:resource="&skills;Applications_Programming"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#ASP.NET -->
+
+    <owl:NamedIndividual rdf:about="&skills;ASP.NET">
+        <rdf:type rdf:resource="&skills;Back_end"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Agile -->
+
+    <owl:NamedIndividual rdf:about="&skills;Agile">
+        <rdf:type rdf:resource="&skills;Methodologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Android -->
+
+    <owl:NamedIndividual rdf:about="&skills;Android">
+        <rdf:type rdf:resource="&skills;Applications_development"/>
+        <rdf:type rdf:resource="&skills;Game_development"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Banking -->
+
+    <owl:NamedIndividual rdf:about="&skills;Banking">
+        <rdf:type rdf:resource="&skills;Business_Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Bash_Shell -->
+
+    <owl:NamedIndividual rdf:about="&skills;Bash_Shell">
+        <rdf:type rdf:resource="&skills;Scripting_Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Billing -->
+
+    <owl:NamedIndividual rdf:about="&skills;Billing">
+        <rdf:type rdf:resource="&skills;Business_Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Bootstrap -->
+
+    <owl:NamedIndividual rdf:about="&skills;Bootstrap">
+        <rdf:type rdf:resource="&skills;Front_end"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#C -->
+
+    <owl:NamedIndividual rdf:about="&skills;C">
+        <rdf:type rdf:resource="&skills;Procedure_Programming_Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#C++ -->
+
+    <owl:NamedIndividual rdf:about="&skills;C++">
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+        <rdf:type rdf:resource="&skills;Procedure_Programming_Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CRM -->
+
+    <owl:NamedIndividual rdf:about="&skills;CRM"/>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CSS -->
+
+    <owl:NamedIndividual rdf:about="&skills;CSS">
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CSS3 -->
+
+    <owl:NamedIndividual rdf:about="&skills;CSS3">
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CSharp -->
+
+    <owl:NamedIndividual rdf:about="&skills;CSharp">
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#CentOS -->
+
+    <owl:NamedIndividual rdf:about="&skills;CentOS">
+        <rdf:type rdf:resource="&skills;Linux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Cocoa -->
+
+    <owl:NamedIndividual rdf:about="&skills;Cocoa">
+        <rdf:type rdf:resource="&skills;Mobile_development_related"/>
+        <rdf:type rdf:resource="&skills;Mobile_development_related_to_programming_language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Cocoa_Touch -->
+
+    <owl:NamedIndividual rdf:about="&skills;Cocoa_Touch">
+        <rdf:type rdf:resource="&skills;Programming_Tools"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#EJB -->
+
+    <owl:NamedIndividual rdf:about="&skills;EJB">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Factory -->
+
+    <owl:NamedIndividual rdf:about="&skills;Factory">
+        <rdf:type rdf:resource="&skills;Design_Patterns"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Finance -->
+
+    <owl:NamedIndividual rdf:about="&skills;Finance">
+        <rdf:type rdf:resource="&skills;Business_Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#HP_Haven -->
+
+    <owl:NamedIndividual rdf:about="&skills;HP_Haven">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#HP_Vertica -->
+
+    <owl:NamedIndividual rdf:about="&skills;HP_Vertica">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#HTML -->
+
+    <owl:NamedIndividual rdf:about="&skills;HTML">
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#HTML5 -->
+
+    <owl:NamedIndividual rdf:about="&skills;HTML5">
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Hadoop -->
+
+    <owl:NamedIndividual rdf:about="&skills;Hadoop">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Hibernate -->
+
+    <owl:NamedIndividual rdf:about="&skills;Hibernate">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#IBM_InforSphere -->
+
+    <owl:NamedIndividual rdf:about="&skills;IBM_InforSphere">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#IBM_Pure_Data -->
+
+    <owl:NamedIndividual rdf:about="&skills;IBM_Pure_Data">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#J2EE -->
+
+    <owl:NamedIndividual rdf:about="&skills;J2EE">
+        <rdf:type rdf:resource="&skills;Back_end"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#JPA -->
+
+    <owl:NamedIndividual rdf:about="&skills;JPA">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Java -->
+
+    <owl:NamedIndividual rdf:about="&skills;Java">
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#JavaScript -->
+
+    <owl:NamedIndividual rdf:about="&skills;JavaScript">
+        <rdf:type rdf:resource="&skills;Front_end"/>
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Json -->
+
+    <owl:NamedIndividual rdf:about="&skills;Json">
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Mac_OS -->
+
+    <owl:NamedIndividual rdf:about="&skills;Mac_OS">
+        <rdf:type rdf:resource="&skills;Mac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Matlab -->
+
+    <owl:NamedIndividual rdf:about="&skills;Matlab">
+        <rdf:type rdf:resource="&skills;Functional_Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Microsoft_Dynamic_CRM -->
+
+    <owl:NamedIndividual rdf:about="&skills;Microsoft_Dynamic_CRM">
+        <rdf:type rdf:resource="&skills;CRM_Customer_Relationship_Management"/>
+        <skills:hasValue rdf:resource="&skills;CRM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#NLTK -->
+
+    <owl:NamedIndividual rdf:about="&skills;NLTK">
+        <rdf:type rdf:resource="&skills;NLP"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#NodeJS -->
+
+    <owl:NamedIndividual rdf:about="&skills;NodeJS">
+        <rdf:type rdf:resource="&skills;Back_end"/>
+        <rdf:type rdf:resource="&skills;Front_end"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#OS_X -->
+
+    <owl:NamedIndividual rdf:about="&skills;OS_X">
+        <rdf:type rdf:resource="&skills;Applications_development"/>
+        <rdf:type rdf:resource="&skills;Game_development"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Objective-C -->
+
+    <owl:NamedIndividual rdf:about="&skills;Objective-C">
+        <rdf:type rdf:resource="&skills;Mobile_development_related"/>
+        <rdf:type rdf:resource="&skills;Mobile_development_related_to_programming_language"/>
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#OpenNLP -->
+
+    <owl:NamedIndividual rdf:about="&skills;OpenNLP">
+        <rdf:type rdf:resource="&skills;NLP"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Payment -->
+
+    <owl:NamedIndividual rdf:about="&skills;Payment">
+        <rdf:type rdf:resource="&skills;Business_Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Python -->
+
+    <owl:NamedIndividual rdf:about="&skills;Python">
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+        <rdf:type rdf:resource="&skills;Scripting_Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#R -->
+
+    <owl:NamedIndividual rdf:about="&skills;R">
+        <rdf:type rdf:resource="&skills;Functional_Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#REST -->
+
+    <owl:NamedIndividual rdf:about="&skills;REST">
+        <rdf:type rdf:resource="&skills;Web_Services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#SOA -->
+
+    <owl:NamedIndividual rdf:about="&skills;SOA">
+        <rdf:type rdf:resource="&skills;Service_Design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#SOAP -->
+
+    <owl:NamedIndividual rdf:about="&skills;SOAP">
+        <rdf:type rdf:resource="&skills;Web_Services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Sale -->
+
+    <owl:NamedIndividual rdf:about="&skills;Sale">
+        <rdf:type rdf:resource="&skills;Business_Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Scrum -->
+
+    <owl:NamedIndividual rdf:about="&skills;Scrum">
+        <rdf:type rdf:resource="&skills;Methodologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Servlet -->
+
+    <owl:NamedIndividual rdf:about="&skills;Servlet">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Singleton -->
+
+    <owl:NamedIndividual rdf:about="&skills;Singleton">
+        <rdf:type rdf:resource="&skills;Design_Patterns"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Spark -->
+
+    <owl:NamedIndividual rdf:about="&skills;Spark">
+        <rdf:type rdf:resource="&skills;Machine_Learning"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Spring -->
+
+    <owl:NamedIndividual rdf:about="&skills;Spring">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Spring_Data -->
+
+    <owl:NamedIndividual rdf:about="&skills;Spring_Data">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Spring_MVC -->
+
+    <owl:NamedIndividual rdf:about="&skills;Spring_MVC">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Stanford_Parser -->
+
+    <owl:NamedIndividual rdf:about="&skills;Stanford_Parser">
+        <rdf:type rdf:resource="&skills;NLP"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Storm -->
+
+    <owl:NamedIndividual rdf:about="&skills;Storm">
+        <rdf:type rdf:resource="&skills;Big_Data"/>
+        <rdf:type rdf:resource="&skills;Data_Science_related_to_libraries"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Struct -->
+
+    <owl:NamedIndividual rdf:about="&skills;Struct">
+        <rdf:type rdf:resource="&skills;Web_development_related"/>
+        <rdf:type rdf:resource="&skills;libraries_or_Frameworks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Swift -->
+
+    <owl:NamedIndividual rdf:about="&skills;Swift">
+        <rdf:type rdf:resource="&skills;Mobile_development_related"/>
+        <rdf:type rdf:resource="&skills;Mobile_development_related_to_programming_language"/>
+        <rdf:type rdf:resource="&skills;Object-oriented_programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#Ubuntu -->
+
+    <owl:NamedIndividual rdf:about="&skills;Ubuntu">
+        <rdf:type rdf:resource="&skills;Linux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#XML -->
+
+    <owl:NamedIndividual rdf:about="&skills;XML">
+        <rdf:type rdf:resource="&skills;Programming_language"/>
+        <rdf:type rdf:resource="&skills;UI_design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/dev/Desktop/owl/demo/skills#iOS -->
+
+    <owl:NamedIndividual rdf:about="&skills;iOS">
+        <rdf:type rdf:resource="&skills;Applications_development"/>
+        <rdf:type rdf:resource="&skills;Game_development"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
